@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .layer {
+            height: 120vh;
+            width: 120vw;
+            margin-top: -20px;
+            margin-left: -50px;
+        }
+
+        .background {
+            background-image: url("images/bg2.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+        }
+
+        .human img {
+            position: absolute;
+            bottom: 100px;
+            left: 45vw;
+            width: 450px;
+        }
+
+        .image {
+            margin-top: -80px;
+        }
+
+        .image img.img{
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+            width: 200px;
+        }
+        .role {
+            height: 300px;
+        }
+
+        .heading {
+            color: #ffffff;
+        }
+
+        .heading h1 {
+            font-size: 140px;
+            margin-top: 70vh;
+            margin-left: 300px;
+            text-shadow: 0 0 5px #000;
+        }
+
+        .heading h2 {
+            font-size: 80px;
+            margin-top: 75vh;
+            text-shadow: 0 0 5px #000;
+            padding-right: 350px;
+        }
+
+
+
+        .swing-1 {
+            -webkit-animation: swing 3s infinite alternate cubic-bezier(0.01, 0.01, 0.01, 0.01);
+            -moz-animation: swing 3s infinite alternate cubic-bezier(0.01, 0.01, 0.01, 0.01);
+            animation: swing 3s infinite alternate cubic-bezier(0.01, 0.01, 0.01, 0.01); }
+
+        .swing-2 {
+            -webkit-animation: swing 1s infinite alternate cubic-bezier(0.3, 0.01, 0.01, 0.3);
+            -moz-animation: swing 1s infinite alternate cubic-bezier(0.3, 0.01, 0.01, 0.3);
+            animation: swing 1s infinite alternate cubic-bezier(0.3, 0.01, 0.01, 0.3); }
+
+        .swing-3 {
+            -webkit-animation: swing 1.5s infinite alternate cubic-bezier(0.01, 0.5, 0.01, 0.01);
+            -moz-animation: swing 1.5s infinite alternate cubic-bezier(0.01, 0.5, 0.01, 0.01);
+            animation: swing 1.5s infinite alternate cubic-bezier(0.01, 0.5, 0.01, 0.01); }
+
+        .swing-4 {
+            -webkit-animation: swing 2s infinite alternate cubic-bezier(0.4, 0.01, 0.01, 0.5);
+            -moz-animation: swing 2s infinite alternate cubic-bezier(0.4, 0.01, 0.01, 0.5);
+            animation: swing 2s infinite alternate cubic-bezier(0.4, 0.01, 0.01, 0.5); }
+
+        @-webkit-keyframes swing {
+            0% {
+                -webkit-transform: rotateZ(3deg);
+                -moz-transform: rotateZ(3deg);
+                transform: rotateZ(3deg); }
+            100% {
+                -webkit-transform: rotateZ(-3deg);
+                -moz-transform: rotateZ(-3deg);
+                transform: rotateZ(-3deg); } }
+        @-moz-keyframes swing {
+            0% {
+                -webkit-transform: rotateZ(3deg);
+                -moz-transform: rotateZ(3deg);
+                transform: rotateZ(3deg); }
+            100% {
+                -webkit-transform: rotateZ(-3deg);
+                -moz-transform: rotateZ(-3deg);
+                transform: rotateZ(-3deg); } }
+        @-ms-keyframes swing {
+            0% {
+                -webkit-transform: rotateZ(3deg);
+                -moz-transform: rotateZ(3deg);
+                transform: rotateZ(3deg); }
+            100% {
+                -webkit-transform: rotateZ(-3deg);
+                -moz-transform: rotateZ(-3deg);
+                transform: rotateZ(-3deg); } }
+        @keyframes swing {
+            0% {
+                -webkit-transform: rotateZ(3deg);
+                -moz-transform: rotateZ(3deg);
+                transform: rotateZ(3deg); }
+            100% {
+                -webkit-transform: rotateZ(-3deg);
+                -moz-transform: rotateZ(-3deg);
+                transform: rotateZ(-3deg); } }
+    </style>
+</head>
+<body>
+<div class="parallax-window" id="scene">
+    <div class="layer background" data-depth="0.2"></div>
+    <div class="layer image swing-1" data-depth="0.8" style="margin-top: -100px">
+        <img class="role" src="images/role.png" style="margin-left: 15vw;">
+        <br>
+        <img src="images/1.png" alt="" style="margin-left: 10vw;" class="img">
+    </div>
+    <div class="layer image swing-3" data-depth="0.5" style="margin-top: -180px">
+        <img class="role" src="images/role.png" style="margin-left: 40vw;">
+        <br>
+        <img src="images/3.png" alt=""  class="img" style="margin-left: 35vw">
+    </div>
+    <div class="layer image swing-2" data-depth="0.9" style="margin-top: -130px">
+        <img class="role" src="images/role.png" style="margin-left: 65vw;">
+        <br>
+        <img src="images/2.png" alt=""  class="img" style="margin-left: 60vw" >
+    </div>
+    <div class="layer image swing-4" data-depth="1" style="margin-top: -70px">
+        <img class="role" src="images/role.png" style="margin-left: 85vw;">
+        <br>
+        <img src="images/4.png" alt=""  class="img"  style="margin-left: 80vw">
+    </div>
+    <div class="layer human" data-depth="0.5">
+        <img src="images/human.png" alt="">
+    </div>
+
+    <div class="layer heading" data-depth="1">
+        <h1>2019</h1>
+    </div>
+    <div class="layer heading" data-depth="0.4">
+        <h2 class="text-right mr-5">茸ちゃん</h2>
+    </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    $(document).ready(function () {
+      var scene = document.getElementById('scene');
+      var parallaxInstance = new Parallax(scene, {
+        relativeInput: true
+      });
+    });
+</script>
+
+</body>
+</html>
